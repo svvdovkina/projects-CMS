@@ -1,6 +1,6 @@
 
 body {
-  background-color: rgb(251, 196, 32);
+  background-color: #fbc420;
   margin: 0;
 }
 
@@ -8,10 +8,11 @@ body {
   background-color: rgb(248, 245, 245);
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .hero-center {
-  margin: 20px;
+  margin: 20px 60px;
   max-height: 900px;
   display: grid;
   gap: 30px;
@@ -29,6 +30,16 @@ body {
   letter-spacing: 2px;
 }
 
+.image-container {
+  align-self: center;
+}
+
 .hero-image {
-  height: 300px;
+  width: 350px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-image {
+    display: none;
+  }
 }
